@@ -1,12 +1,9 @@
 {
-  "name": "CraftyRO",
+  "name": "craftyro",
   "version": "1.0.0",
   "description": "My project",
   "main": "index.js",
   "repository": "https://github.com/wwwrt/CraftyRO.git",
   "author": "wwwrt <tpripon99@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "tailwindcss": "^3.3.5"
-  }
+  "license": "MIT"
 }
