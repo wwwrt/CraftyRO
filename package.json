@@ -1,0 +1,9 @@
+{
+  "name": "CraftyRO",
+  "version": "1.0.0",
+  "description": "My project",
+  "main": "index.js",
+  "repository": "https://github.com/wwwrt/CraftyRO.git",
+  "author": "wwwrt <tpripon99@gmail.com>",
+  "license": "MIT"
+}
