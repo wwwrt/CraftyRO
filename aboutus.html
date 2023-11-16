@@ -24,123 +24,147 @@
             position:fixed;
             bottom: 0;
             width: 100%;
-            z-index: 1000;
+
         }
     </style>
 </head>
 
-<body class="font-[Poppins] bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] h-max">
+<body class="font-poppins bg-gradient-to-br from-[#fefae0] to-[#d4a373] h-full">
 
     <!-- Navbar -->
 
-    <body class="bg-blue-500">
-        <nav class="relative px-4  flex justify-between items-center bg-white bg-opacity-30">
+    <nav class="relative px-4  flex justify-between items-center bg-white bg-opacity-30 ">
 
-            <img src="images/LogoCraftyRO.png" class="w-28">
+        <img src="images/LogoCraftyRO.png" class="w-28">
 
-            <div class="lg:hidden">
-                <button class="navbar-burger flex items-center text-blue-600 p-3">
-                    <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <title>Mobile menu</title>
-                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                    </svg>
-                </button>
+        <div class="lg:hidden">
+            <button class="navbar-burger flex items-center text-[#d4a373] p-3">
+                <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Mobile menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </button>
 
 
-            </div>
-            <ul class="hidden lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-                <li><a class="text-xs text-gray-400 hover:text-gray-500" href="index.html">Home</a></li>
-                <li><a class="text-xs text-gray-400 hover:text-gray-500" href="shop.html">Shop</a></li>
-                <li><a class="text-xs text-gray-400 hover:text-gray-500" href="exhibition.html">Exhibition</a></li>
-                <li><a class="text-xs text-gray-400 hover:text-gray-500" href="leaderboard.html">Leaderboard</a></li>
-                <li><a class="text-xs text-gray-400 hover:text-gray-500" href="learn.html">Learn</a></li>
-                <li><a class="text-xs text-gray-400 hover:text-gray-500" href="supplies.html">Crafty Supplies</a></li>
-                <li><a class="text-xs text-gray-400 hover:text-gray-500" href="categories.html">Categories</a></li>
-                <li><a class="text-3xl text-blue-800 font-bold" href="aboutus.html">About Us</a></li>
-                <li><a class="text-xs text-gray-400 hover:text-gray-500" href="points.html">Points</a></li>
-                <li><a class="text-xs text-gray-400 hover:text-gray-500" href="vip.html">VIP</a></li>
-                <li><a class="text-xs text-gray-400 hover:text-gray-500" href="myprofile.html">MyProfile</a></li>
-            </ul>
-            <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200"
-                href="#">Sign In</a>
-            <a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200"
-                href="#">Sign up</a>
-        </nav>
-        <div class="navbar-menu relative z-50 hidden">
-            <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-            <nav
-                class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
-                <div class="flex items-center mb-8">
-                    <a class="mr-auto text-3xl font-bold leading-none" href="#">
-
-                    </a>
-                    <button class="navbar-close">
-
-                    </button>
-                </div>
-                <div>
-                    <ul>
-                        <li class="mb-1">
-                            <a class="block p-4 text-sm font-bold text-blue-300 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">Home</a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">Shop</a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">Exhibition</a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">Leaderboard</a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">Learn</a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">Crafty Supplies</a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">Categories</a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">About Us</a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">Points</a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">VIP</a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">My Profile</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="mt-auto">
-                    <div class="pt-6">
-                        <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold bg-gray-50 hover:bg-gray-100 rounded-xl"
-                            href="#">Sign in</a>
-                        <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl"
-                            href="#">Sign Up</a>
-                    </div>
-                    <p class="my-4 text-xs text-center text-gray-400">
-                        <span>©CraftyRO 2023. All rights reserved.</span>
-                    </p>
-                </div>
-            </nav>
         </div>
+        <ul class="hidden lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+            <li><a class="text-xs lg:text-lg text-[#d4a373] hover:bg-[#d4a373] hover:text-[#faedcd] rounded p-2 font-bold"
+                    href="index.html">Home</a></li>
 
+            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                class="text-xs text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded p-1"
+                type="button">Shop <aria-hidden="true">
+                    
 
+                </svg>
+            </button>
+
+            <!-- Dropdown menu -->
+            <div id="dropdown"
+                class="z-10 hidden border border-[#d4a373] bg-[#faedcd] divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                <ul class="flex items-center flex-col py-2 text-sm text-[#faedcd] dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                    <li><a class="text-xs text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded p-1"
+                            href="shop.html">Shop</a></li>
+                    <li><a class="text-xs text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded p-1"
+                            href="supplies.html">Crafty Supplies</a></li>
+                    <li><a class="text-xs text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded p-1"
+                            href="learn.html">Learn</a></li>
+                    <li><a class="text-xs text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded p-1"
+                            href="categories.html">Categories</a></li>
+                </ul>
+            </div>
+
+            <li><a class="text-xs text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded p-1"
+                    href="exhibition.html">Exhibition</a></li>
+            <li><a class="text-xs text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded p-1"
+                    href="leaderboard.html">Leaderboard</a></li>
+            <li><a class="text-3xl text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded p-1"
+                    href="aboutus.html">About Us</a></li>
+            <li><a class="text-xs text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded p-1"
+                    href="points.html">Points</a></li>
+            <li><a class="text-xs text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded p-1"
+                    href="vip.html">VIP</a></li>
+            <li><a class="text-xs text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded p-1"
+                    href="myprofile.html">MyProfile</a></li>
+        </ul>
+        <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-[#faedcd] hover:bg-[#d4a373] hover:text-[#faedcd] text-sm text-[#d4a373] font-bold  rounded-xl transition duration-700"
+            href="signup.html">Sign Up</a>
+        <a class="hidden lg:inline-block py-2 px-6 bg-[#d4a373] hover:bg-[#faedcd] hover:text-[#d4a373] text-sm text-[#faedcd] font-bold rounded-xl transition duration-700"
+            href="login.html">Log In</a>
+    </nav>
+    <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-[#faedcd] opacity-25"></div>
+        <nav
+            class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-[#e7c8a0] border-r overflow-y-auto">
+            <div class="flex items-center mb-8">
+                <a class="mr-auto text-3xl font-bold leading-none" href="#">
+
+                </a>
+                <button class="navbar-close">
+
+                </button>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a class="block p-4 text-lg font-bold text-[#faedcd] hover:bg-[#faedcd] hover:text-[#e7c8a0] rounded duration-500"
+                            href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="block p-4 text-lg font-semibold text-[#faedcd] hover:bg-[#faedcd] hover:text-[#e7c8a0] rounded duration-500"
+                            href="shop.html">Shop</a>
+                    </li>
+                    <li>
+                        <a class="block p-4 text-lg font-semibold text-[#faedcd] hover:bg-[#faedcd] hover:text-[#e7c8a0] rounded duration-500"
+                            href="exhibition.html">Exhibition</a>
+                    </li>
+                    <li>
+                        <a class="block p-4 text-lg font-semibold text-[#faedcd] hover:bg-[#faedcd] hover:text-[#e7c8a0] rounded duration-500"
+                            href="leaderboard.html">Leaderboard</a>
+                    </li>
+                    <li>
+                        <a class="block p-4 text-lg font-semibold text-[#faedcd] hover:bg-[#faedcd] hover:text-[#e7c8a0] rounded duration-500"
+                            href="learn.html">Learn</a>
+                    </li>
+                    <li>
+                        <a class="block p-4 text-lg font-semibold text-[#faedcd] hover:bg-[#faedcd] hover:text-[#e7c8a0] rounded duration-500"
+                            href="supplies.html">Crafty Supplies</a>
+                    </li>
+                    <li>
+                        <a class="block p-4 text-lg font-semibold text-[#faedcd] hover:bg-[#faedcd] hover:text-[#e7c8a0] rounded duration-500"
+                            href="categories.html">Categories</a>
+                    </li>
+                    <li>
+                        <a class="block p-4 text-3xl font-bold text-[#faedcd] hover:bg-[#faedcd] hover:text-[#e7c8a0] rounded duration-500"
+                            href="index.html">ABOUT US</a>
+                    </li>
+                    <li>
+                        <a class="block p-4 text-lg font-semibold text-[#faedcd] hover:bg-[#faedcd] hover:text-[#e7c8a0] rounded duration-500"
+                            href="points.html">Points</a>
+                    </li>
+                    <li>
+                        <a class="block p-4 text-lg font-semibold text-[#faedcd] hover:bg-[#faedcd] hover:text-[#e7c8a0] rounded duration-500"
+                            href="vip.html">VIP</a>
+                    </li>
+                    <li>
+                        <a class="block p-4 text-lg font-semibold text-[#faedcd] hover:bg-[#faedcd] hover:text-[#e7c8a0] rounded duration-500"
+                            href="myprofile.html">My Profile</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-auto">
+                <div class="pt-6">
+                    <a class="block px-4 py-3 mb-3 leading-loose text-sm font-bold text-center  bg-[#faedcd] hover:bg-[#d4a373] hover:text-[#faedcd] text-[#d4a373]  rounded-xl duration-700"
+                        href="signup.html">Sign up</a>
+                    <a class="block px-4 py-3 mb-2 leading-loose text-sm font-bold text-center  bg-[#d4a373] hover:bg-[#faedcd] hover:text-[#d4a373]] text-[#faedcd]   rounded-xl duration-700"
+                        href="login.html">Log in</a>
+                </div>
+                <p class="my-4 text-sm fold-bold text-center text-[#faedcd]">
+                    <span>©CraftyRO 2023. All rights reserved.</span>
+                </p>
+            </div>
+        </nav>
+    </div>
 
 
 
