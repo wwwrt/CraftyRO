@@ -37,191 +37,694 @@
             position: bottom;
             bottom: 0;
             width: 100%;
-            z-index: 1000;
         }
 
-
-        .carousel {
-            height: 50rem;
-            perspective: 30rem;
-            transform: translateY(-10rem);
-        }
-
-
-        h4 {
-            margin: 0;
-            padding: 0;
-            background: #fff;
-            color: #000;
-            box-sizing: border-box;
-            padding: 0.5rem 0.1rem;
-            font-weight: bold;
-            font-size: 20px;
-            text-align: center;
-        }
 
 
     </style>
 </head>
 
-<body class="font-[Poppins] bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] h-max">
+<body class="font-poppins bg-gradient-to-br from-[#fefae0] to-[#d4a373] h-full">
 
     <!-- Navbar -->
 
-    <body class="bg-blue-500">
-        <nav class="relative px-4  flex justify-between items-center bg-white bg-opacity-30">
+    <nav class="relative px-4  flex justify-between items-center bg-white bg-opacity-30">
 
-            <img src="images/LogoCraftyRO.png" class="w-28">
+        <img src="images/LogoCraftyRO.png" class="w-28">
 
-            <div class="lg:hidden">
-                <button class="navbar-burger flex items-center text-blue-600 p-3">
-                    <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <title>Mobile menu</title>
-                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                    </svg>
-                </button>
+        <div class="lg:hidden">
+            <button class="navbar-burger flex items-center text-[#d4a373] p-3">
+                <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Mobile menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </button>
 
 
-            </div>
-            <ul class="hidden lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-                <li><a class="text-xs text-gray-400 hover:text-gray-500" href="index.html">Home</a></li>
-                <li><a class="text-xs text-gray-400 hover:text-gray-500" href="shop.html">Shop</a></li>
-                <li><a class="text-3xl text-blue-800 font-bold" href="exhibition.html">Exhibition</a></li>
-                <li><a class="text-xs text-gray-400 hover:text-gray-500" href="leaderboard.html">Leaderboard</a></li>
-                <li><a class="text-xs text-gray-400 hover:text-gray-500" href="learn.html">Learn</a></li>
-                <li><a class="text-xs text-gray-400 hover:text-gray-500" href="supplies.html">Crafty Supplies</a></li>
-                <li><a class="text-xs text-gray-400 hover:text-gray-500" href="categories.html">Categories</a></li>
-                <li><a class="text-xs text-gray-400 hover:text-gray-500" href="aboutus.html">About Us</a></li>
-                <li><a class="text-xs text-gray-400 hover:text-gray-500" href="points.html">Points</a></li>
-                <li><a class="text-xs text-gray-400 hover:text-gray-500" href="vip.html">VIP</a></li>
-                <li><a class="text-xs text-gray-400 hover:text-gray-500" href="myprofile.html">MyProfile</a></li>
-            </ul>
-            <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200"
-                href="#">Sign In</a>
-            <a class="hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200"
-                href="#">Sign up</a>
-        </nav>
-        <div class="navbar-menu relative z-50 hidden">
-            <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-            <nav
-                class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
-                <div class="flex items-center mb-8">
-                    <a class="mr-auto text-3xl font-bold leading-none" href="#">
-
-                    </a>
-                    <button class="navbar-close">
-
-                    </button>
-                </div>
-                <div>
-                    <ul>
-                        <li class="mb-1">
-                            <a class="block p-4 text-sm font-bold text-blue-300 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">Home</a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">Shop</a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">Exhibition</a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">Leaderboard</a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">Learn</a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">Crafty Supplies</a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">Categories</a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">About Us</a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">Points</a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">VIP</a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                                href="#">My Profile</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="mt-auto">
-                    <div class="pt-6">
-                        <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold bg-gray-50 hover:bg-gray-100 rounded-xl"
-                            href="#">Sign in</a>
-                        <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl"
-                            href="#">Sign Up</a>
-                    </div>
-                    <p class="my-4 text-xs text-center text-gray-400">
-                        <span>©CraftyRO 2023. All rights reserved.</span>
-                    </p>
-                </div>
-            </nav>
         </div>
+        <ul class="hidden lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+            <li><a class="text-xs text-[#d4a373] hover:bg-[#d4a373] hover:text-[#faedcd] rounded p-2 font-bold"
+                    href="index.html">Home</a></li>
+
+            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                class="text-xs text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded p-1"
+                type="button">Shop <aria-hidden="true">
+                    
+
+                </svg>
+            </button>
+
+            <!-- Dropdown menu -->
+            <div id="dropdown"
+                class="z-10 hidden border border-[#d4a373] bg-[#faedcd] divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                <ul class="flex items-center flex-col py-2 text-sm text-[#faedcd] dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                    <li><a class="text-xs text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded p-1"
+                            href="shop.html">Shop</a></li>
+                    <li><a class="text-xs text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded p-1"
+                            href="supplies.html">Crafty Supplies</a></li>
+                    <li><a class="text-xs text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded p-1"
+                            href="learn.html">Learn</a></li>
+                    <li><a class="text-xs text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded p-1"
+                            href="categories.html">Categories</a></li>
+                </ul>
+            </div>
+
+            <li><a class="text-3xl text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded p-1"
+                    href="exhibition.html">Exhibition</a></li>
+            <li><a class="text-xs text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded p-1"
+                    href="leaderboard.html">Leaderboard</a></li>
+            <li><a class="text-xs text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded p-1"
+                    href="aboutus.html">About Us</a></li>
+            <li><a class="text-xs text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded p-1"
+                    href="points.html">Points</a></li>
+            <li><a class="text-xs text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded p-1"
+                    href="vip.html">VIP</a></li>
+            <li><a class="text-xs text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded p-1"
+                    href="myprofile.html">MyProfile</a></li>
+        </ul>
+        <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-[#faedcd] hover:bg-[#d4a373] hover:text-[#faedcd] text-sm text-[#d4a373] font-bold  rounded-xl transition duration-700"
+            href="signup.html">Sign Up</a>
+        <a class="hidden lg:inline-block py-2 px-6 bg-[#d4a373] hover:bg-[#faedcd] hover:text-[#d4a373] text-sm text-[#faedcd] font-bold rounded-xl transition duration-700"
+            href="login.html">Log In</a>
+    </nav>
+    <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-[#faedcd] opacity-25"></div>
+        <nav
+            class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-[#e7c8a0] border-r overflow-y-auto">
+            <div class="flex items-center mb-8">
+                <a class="mr-auto text-3xl font-bold leading-none" href="#">
+
+                </a>
+                <button class="navbar-close">
+
+                </button>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a class="block p-4 text-lg font-bold text-[#faedcd] hover:bg-[#faedcd] hover:text-[#e7c8a0] rounded duration-500"
+                            href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="block p-4 text-lg font-semibold text-[#faedcd] hover:bg-[#faedcd] hover:text-[#e7c8a0] rounded duration-500"
+                            href="shop.html">Shop</a>
+                    </li>
+                    <li>
+                        <a class="block p-4 text-3xl font-bold text-[#faedcd] hover:bg-[#faedcd] hover:text-[#e7c8a0] rounded duration-500"
+                            href="index.html">EXHIBITION</a>
+                    </li>
+                    <li>
+                        <a class="block p-4 text-lg font-semibold text-[#faedcd] hover:bg-[#faedcd] hover:text-[#e7c8a0] rounded duration-500"
+                            href="leaderboard.html">Leaderboard</a>
+                    </li>
+                    <li>
+                        <a class="block p-4 text-lg font-semibold text-[#faedcd] hover:bg-[#faedcd] hover:text-[#e7c8a0] rounded duration-500"
+                            href="learn.html">Learn</a>
+                    </li>
+                    <li>
+                        <a class="block p-4 text-lg font-semibold text-[#faedcd] hover:bg-[#faedcd] hover:text-[#e7c8a0] rounded duration-500"
+                            href="supplies.html">Crafty Supplies</a>
+                    </li>
+                    <li>
+                        <a class="block p-4 text-lg font-semibold text-[#faedcd] hover:bg-[#faedcd] hover:text-[#e7c8a0] rounded duration-500"
+                            href="categories.html">Categories</a>
+                    </li>
+                    <li>
+                        <a class="block p-4 text-lg font-semibold text-[#faedcd] hover:bg-[#faedcd] hover:text-[#e7c8a0] rounded duration-500"
+                            href="aboutus.html">About Us</a>
+                    </li>
+                    <li>
+                        <a class="block p-4 text-lg font-semibold text-[#faedcd] hover:bg-[#faedcd] hover:text-[#e7c8a0] rounded duration-500"
+                            href="points.html">Points</a>
+                    </li>
+                    <li>
+                        <a class="block p-4 text-lg font-semibold text-[#faedcd] hover:bg-[#faedcd] hover:text-[#e7c8a0] rounded duration-500"
+                            href="vip.html">VIP</a>
+                    </li>
+                    <li>
+                        <a class="block p-4 text-lg font-semibold text-[#faedcd] hover:bg-[#faedcd] hover:text-[#e7c8a0] rounded duration-500"
+                            href="myprofile.html">My Profile</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-auto">
+                <div class="pt-6">
+                    <a class="block px-4 py-3 mb-3 leading-loose text-sm font-bold text-center  bg-[#faedcd] hover:bg-[#d4a373] hover:text-[#faedcd] text-[#d4a373]  rounded-xl duration-700"
+                        href="signup.html">Sign up</a>
+                    <a class="block px-4 py-3 mb-2 leading-loose text-sm font-bold text-center  bg-[#d4a373] hover:bg-[#faedcd] hover:text-[#d4a373]] text-[#faedcd]   rounded-xl duration-700"
+                        href="login.html">Log in</a>
+                </div>
+                <p class="my-4 text-sm fold-bold text-center text-[#faedcd]">
+                    <span>©CraftyRO 2023. All rights reserved.</span>
+                </p>
+            </div>
+        </nav>
+    </div>
 
 
 
 
-
-
-        <div class="flex mt-8 mb-8 justify-center" style="font-size:4rem;">Top Crafts Of November</div>
+    <div class="flex mt-8 mb-8 text-[2rem] md:text-[3rem] lg:text-[4rem] justify-center text-center text-[#d4a373] hover: font-bold ">Top crafts of november</div>
 
         <!-- carousel -->
 
 
         <div class="carousel">
             <div class="carousel-item">
-                    <img src="images/img1.jpg" >
-                
-                <h4>Responsive image gallery</h4>
+                <img class="rounded-2xl" src="images/img1.jpg">
+
             </div>
 
             <div class="carousel-item">
-                    <img src="images/img2.jpeg">
-               
-                <h4>Tab image gallery</h4>
+                <img class="rounded-2xl" src="images/img2.jpeg">
+
             </div>
 
             <div class="carousel-item">
-                    <img src="images/img1.jpg">
-                
-                <h4>Building header of a website</h4>
+                <img class="rounded-2xl" src="images/img1.jpg">
+
             </div>
 
             <div class="carousel-item">
-                    <img src="images/img2.jpeg">
-                
-                <h4>image slider</h4>
+                <img class="rounded-2xl" src="images/img2.jpeg">
+
             </div>
 
             <div class="carousel-item">
-                    <img src="images/img1.jpg">
-               
-                <h4>image lightbox gallery</h4>
+                <img class="rounded-2xl" src="images/img1.jpg">
+
             </div>
         </div>
 
 
 
-        <div class="flex mt- mb-8 justify-center" style="font-size:4rem;">Top Crafts Of ALL TIME</div>
+        <div class="flex mt-[5rem] mb-8 text-[2rem] md:text-[3rem] lg:text-[4rem]  justify-center text-center text-[#d4a373] font-bold ">Top crafts of ALL TIME</div>
 
 
+
+<!-- carousels -->
+
+
+
+        <div class="max-w-2xl mx-auto mb-10">
+
+            <div id="default-carousel" class="relative" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-96 2xl:h-96">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="images/img1.jpg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="images/img2.jpeg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="images/img1.jpg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-[#faedcd]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <button type="button"
+                    class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 ">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-[#faedcd]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+        </div>
+
+        <div class="max-w-2xl mx-auto mb-10">
+
+            <div id="default-carousel" class="relative" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-96 2xl:h-96">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="images/img1.jpg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="images/img2.jpeg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="images/img1.jpg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-[#faedcd]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <button type="button"
+                    class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 ">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-[#faedcd]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+        </div>
+
+
+        <div class="max-w-2xl mx-auto mb-10">
+
+            <div id="default-carousel" class="relative" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-96 2xl:h-96">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="images/img1.jpg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="images/img2.jpeg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="images/img1.jpg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-[#faedcd]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <button type="button"
+                    class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 ">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-[#faedcd]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+        </div>
+
+
+
+
+        <div class="max-w-2xl mx-auto mb-10">
+
+            <div id="default-carousel" class="relative" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-96 2xl:h-96">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="images/img1.jpg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="images/img2.jpeg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="images/img1.jpg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-[#faedcd]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <button type="button"
+                    class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 ">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-[#faedcd]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+        </div>
+
+
+
+
+
+        <div class="max-w-2xl mx-auto mb-10">
+
+            <div id="default-carousel" class="relative" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-96 2xl:h-96">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="images/img1.jpg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="images/img2.jpeg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="images/img1.jpg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-[#faedcd]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <button type="button"
+                    class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 ">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-[#faedcd]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+        </div>
+
+
+
+
+
+
+        <div class="max-w-2xl mx-auto mb-10">
+
+            <div id="default-carousel" class="relative" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-96 2xl:h-96">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="images/img1.jpg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="images/img2.jpeg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="images/img1.jpg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-[#faedcd]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <button type="button"
+                    class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 ">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-[#faedcd]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+        </div>
+
+
+
+
+
+
+        <div class="max-w-2xl mx-auto mb-10">
+
+            <div id="default-carousel" class="relative" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-96 2xl:h-96">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="images/img1.jpg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="images/img2.jpeg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="images/img1.jpg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-[#faedcd]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <button type="button"
+                    class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 ">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-[#faedcd]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+        </div>
+
+
+
+
+
+        <div class="max-w-2xl mx-auto mb-10">
+
+            <div id="default-carousel" class="relative" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-96 2xl:h-96">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="images/img1.jpg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="images/img2.jpeg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="images/img1.jpg"
+                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-[#faedcd]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </span>
+                </button>
+                <button type="button"
+                    class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 ">
+                        <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-[#faedcd]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+        </div>
+
+
+<!-- see more -->
+
+
+<div class="flex flex-col items-center mb-10">
+    <a href="exhibition.html">
+        <div class="flex mt-8 mb-2 justify-center" style="font-size: 3rem;">See more</div>
+    </a>
+
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1L12 12L23 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</div>
 
 
         <!-- footer -->
