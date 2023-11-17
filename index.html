@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<link rel="stylesheet" href="style.css">
     <title>CraftyRO</title>
 
     <!-- fonts -->
@@ -26,6 +27,8 @@
             width: 100%;
             z-index: 1000;
         }
+
+       
     </style>
 </head>
 
@@ -55,15 +58,16 @@
             <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
                 class="text-xs text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded p-1"
                 type="button">Shop <aria-hidden="true">
-                    
 
-                </svg>
+
+                    </svg>
             </button>
 
             <!-- Dropdown menu -->
             <div id="dropdown"
                 class="z-10 hidden border border-[#d4a373] bg-[#faedcd] divide-y divide-gray-100 rounded-lg shadow w-44 ">
-                <ul class="flex items-center flex-col py-2 text-sm text-[#faedcd] dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                <ul class="flex items-center flex-col py-2 text-sm text-[#faedcd] dark:text-gray-200"
+                    aria-labelledby="dropdownDefaultButton">
                     <li><a class="text-xs text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded p-1"
                             href="shop.html">Shop</a></li>
                     <li><a class="text-xs text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded p-1"
@@ -172,15 +176,23 @@
 
     <div class="flex flex-row justify-around">
 
-        <div><img class="w-28 h-40 sm:w-44 sm:h-60 md:w-[15rem] md:h-[20rem] lg:w-[20rem] lg:h-[30rem] xl:w-[25rem] xl:h-[40rem] mx-2 my-4 rounded-3xl" src="images/img1.jpg" alt=""></div>
-        <div><img class="w-28 h-40 sm:w-44 sm:h-60 md:w-[15rem] md:h-[20rem] lg:w-[20rem] lg:h-[30rem] xl:w-[25rem] xl:h-[40rem] mx-2 my-4 rounded-3xl" src="images/img2.jpeg" alt=""></div>
-        <div><img class="w-28 h-40 sm:w-44 sm:h-60 md:w-[15rem] md:h-[20rem] lg:w-[20rem] lg:h-[30rem] xl:w-[25rem] xl:h-[40rem] mx-2 my-4 rounded-3xl" src="images/img1.jpg" alt=""></div>
+        <div><img
+                class="scale-up-center   hover:slide-fwd-center slide-fwd-center w-28 h-40 sm:w-44 sm:h-60 md:w-[15rem] md:h-[20rem] lg:w-[20rem] lg:h-[30rem] xl:w-[25rem] xl:h-[40rem] mx-2 my-4 rounded-3xl"
+                src="images/img1.jpg" alt=""></div>
+        <div><img
+                class="scale-up-center  hover:slide-fwd-center w-28 h-40 sm:w-44 sm:h-60 md:w-[15rem] md:h-[20rem] lg:w-[20rem] lg:h-[30rem] xl:w-[25rem] xl:h-[40rem] mx-2 my-4 rounded-3xl"
+                src="images/img2.jpeg" alt=""></div>
+        <div><img
+                class="scale-up-center  hover:slide-fwd-center w-28 h-40 sm:w-44 sm:h-60 md:w-[15rem] md:h-[20rem] lg:w-[20rem] lg:h-[30rem] xl:w-[25rem] xl:h-[40rem] mx-2 my-4 rounded-3xl"
+                src="images/img1.jpg" alt=""></div>
 
 
     </div>
 
 
-    <div class="flex mt-8 mb-8 text-[2rem] md:text-[3rem] lg:text-[4rem] justify-center text-center text-[#d4a373] hover: font-bold ">Top crafts of november</div>
+    <div
+        class="flex mt-8 mb-8 text-[2rem] md:text-[3rem] lg:text-[4rem] justify-center text-center text-[#d4a373] hover: font-bold ">
+        Top crafts of november</div>
 
 
 
@@ -190,7 +202,7 @@
 
     <div class="max-w-2xl mx-auto mb-10">
 
-        <div id="default-carousel" class="relative" data-carousel="static">
+        <div id="default-carousel" class="relative scale-up-center" data-carousel="static">
             <!-- Carousel wrapper -->
             <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-96 2xl:h-96">
                 <!-- Item 1 -->
@@ -252,7 +264,9 @@
     </div>
 
 
-    <div class="flex mt-8 mb-8 text-[2rem] md:text-[3rem] lg:text-[4rem]  justify-center text-center text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded cursor-pointer"><a href="exhibition.html">Go and see 'em ALL!</a></div>
+    <div
+        class="flex mt-8 mb-8 text-[2rem] md:text-[3rem] lg:text-[4rem]  justify-center text-center text-[#d4a373] font-bold hover:text-[#faedcd] hover:bg-[#d4a373] rounded cursor-pointer">
+        <a href="exhibition.html">Go and see 'em ALL!</a></div>
 
 
 
